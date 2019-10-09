@@ -13,17 +13,23 @@
   <body>
     <div class="container">
       <form>
-          <label for="numero1">Ingresa un número:</label>
-          <input type="number" id="numero1" />
+          <label for="nombre">Ingresa un nombre:</label>
+          <input type="text" id="nombre" />
 
-        <label for="numero2">Ingresa otro número número:</label>
-        <input type="number" id="numero2" />
+        <select id="seccion">
+          <option value="general">General</option>
+          <option value="plata">Plata</option>
+          <option value="oro">Oro</option>
+          <option value="vip">VIP</option>
+        </select>
+
         <label for="resultado">Resultado:</label>
-        <input type="number" id="resultado" readonly />
+        <input type="text" id="resultado" readonly />
+
         <div class="panel">
           <div class="row">
-            <input type="button" value="Sumar" class="column" id="btnSumar"/>
-            <input type="button" value="Restar" class="column" id="btnRestar"/>
+            <input type="button" value="Select" class="column" id="btnSelect"/>
+            <input type="button" value="+ Sección" class="column" id="btnOpcion"/>
           </div>
           <div class="row">
             <input type="button" value="Multiplicar" class="column" id="btnMultiplicar"/>
